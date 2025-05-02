@@ -5,10 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Save Green | Home</title>
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="../Css/HomePage.css" />
-  <link rel="stylesheet" href="HomePage.css">
-
-
+  <link rel="stylesheet" href="HomePage.css" />
 </head>
 
 <body>
@@ -16,9 +16,11 @@
     <div class="left-section">
       <img src="../Image/homepageimagee/logo.png" alt="SaveGreen Logo" class="logo" />
     </div>
+
+    <!-- Updated link target: index.html -->
     <nav class="center-section">
       <ul class="nav-links">
-        <li class="active"><a href="HomePage.html">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a href="GoalsPage.html">Goals</a></li>
         <li><a href="DonatePage.html">Donate</a></li>
         <li><a href="VolunteersPage.html">Volunteers</a></li>
@@ -29,10 +31,12 @@
         <li><a href="ContactPage.html">Contact</a></li>
       </ul>
     </nav>
+
     <div class="user-section" style="display: flex; align-items: center; margin-left: auto;">
-      <img src="../Image/homepageimagee/usericon.png" alt="User Icon" id="showRegistration" style="cursor: pointer;" />
-      <span id="userName" style="display: none;"></span> <!-- Username display -->
-  </div>
+      <img src="../Image/homepageimagee/usericon.png" alt="User Icon"
+           id="showRegistration" style="cursor: pointer;" />
+      <span id="userName" style="display: none;"></span>
+    </div>
   </header>
 
   <section class="hero-section" id="hero">
@@ -50,26 +54,25 @@
     </div>
   </section>
 
-  <!-- Registration Form (initially hidden) -->
+  <!-- Registration Form -->
   <div id="registrationForm" style="display: none;">
     <form id="registrationModalForm">
-        <h1>Enter your details!</h1>
-        <input type="text" id="firstName" placeholder="First Name (3 letters at least)" required>
-        <input type="text" id="lastName" placeholder="Last Name (3 letters at least)" required>
-        <input type="email" id="email" placeholder="Email (Should include @ sign)" required>
-        <input type="tel" id="phoneNumber" placeholder="Phone Number (Exactly 8 digits)" required>
-        <button type="submit" id="submitButton">Register</button>
-        <div id="message"></div>
+      <h1>Enter your details!</h1>
+      <input type="text" id="firstName" placeholder="First Name (3 letters at least)" required>
+      <input type="text" id="lastName" placeholder="Last Name (3 letters at least)" required>
+      <input type="email" id="email" placeholder="Email (Should include @ sign)" required>
+      <input type="tel" id="phoneNumber" placeholder="Phone Number (Exactly 8 digits)" required>
+      <button type="submit" id="submitButton">Register</button>
+      <div id="message"></div>
     </form>
   </div>
 
-  <!-- Element to display the username -->
+  <!-- Username display -->
   <div id="userName" style="display: none;"></div>
 
-  
-  <script src="../JavaScript/HomePage.js"></script>
-
-  <script src="HomePage.js" defer></script></body>
-
+  <!-- Scripts -->
+  <script src="../JavaScript/HomePage.js" defer></script>
+  <script src="HomePage.js" defer></script>
+</body>
 
 </html>
